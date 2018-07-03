@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: orange;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 10px 32px;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.left-side {
+    float: left;
+    margin: 13px;
+    transform: translateX(-30%);
+}
+
+.right-side {
+    float: right;
+    margin: 13px;
+    transform: translateX(30%);
+}
+
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
